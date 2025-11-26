@@ -1,81 +1,78 @@
-Project Overview
+Uber Trip Analysis (Power BI)
 
-This project analyzes Uber trip data (~65K records) using Power BI to transform raw data into actionable business insights. Focus areas include:
+Business Problem:
+Uber wants to analyze its trip-level data to understand booking trends, trip efficiency, revenue performance, and payment behavior across cities, vehicle types, and time periods.
 
-Booking trends & peak demand periods
+Objectives
 
-Trip efficiency (distance vs. duration)
+Identify peak ride demand periods and high-demand locations
 
-Revenue and fare analysis by vehicle type and payment mode
+Analyze revenue and fare patterns by vehicle type and payment method
 
-Location-based demand insights
+Evaluate trip efficiency (distance vs. duration)
 
-🔹 Business Problem
+Enable data-driven decisions for driver allocation and surge pricing
 
-Uber operates in a fast-paced, competitive environment. Challenges include:
+Tools Used
 
-Identifying high-demand hours and locations
+Power BI: Interactive dashboards and KPI visualizations
 
-Optimizing driver allocation & surge pricing
+Excel / CSV: Raw dataset storage and cleaning
 
-Improving trip efficiency and customer satisfaction
+DAX: Calculated measures for dynamic insights
 
-Increasing digital payment adoption
+Process Overview
 
-The goal is to convert raw trip data into interactive dashboards that support data-driven decisions.
+Data Preparation:
 
-🔹 Dataset
-Column	Description
-Trip ID	Unique trip identifier
-Pickup/Drop-off	Trip start & end locations
-Distance	Trip distance (km)
-Duration	Trip duration (min)
-Fare	Fare amount ($)
-Payment Method	Cash, Wallet, Card
-Vehicle Type	UberX, Uber Black, XL, Green
-Trip Type	Day / Night
-🔹 Methodology
+Cleaned and transformed raw trip data
 
-Data Cleaning & Transformation – handled missing values and standardized formats.
+Standardized column names and formats
 
-Data Modeling in Power BI – relationships and DAX measures for dynamic analysis.
+Dashboard Metrics in Power BI:
 
-Dashboard Development – Overview KPIs, Time Analysis, Geographic Analysis.
+Total Bookings
 
-Insight Extraction & Recommendations – actionable business strategies derived from dashboards.
+Total Revenue
 
-🔹 Key Insights
+Average Trip Distance & Duration
 
-Trips: 103.7K | Revenue: $1.6M | Average Fare: $15
+Top Pickup & Drop Locations
 
-Peak Hours: 8–10 AM & 6–9 PM
+Dashboard Visualizations:
 
-High-Value Trips: Night and premium vehicle rides
+Overview KPIs, Time-Based Analysis, Geographic Analysis
 
-Vehicle Contribution: UberX leads volume, Black/XL highest per-trip revenue
+Interactive slicers and drill-through filters for deeper insights
 
-Digital Payments: 67% adoption
+Key Insights
 
-High-Demand Zones: Penn Station / Madison Square Garden, Upper East Side North
+Total trips: 103.7K, generating $1.6M revenue
 
-🔹 Recommendations
+Peak demand hours: 8–10 AM & 6–9 PM
 
-Optimize driver allocation for peak hours & high-demand zones
+UberX drives the highest volume; premium vehicles yield higher per-trip revenue
 
-Refine surge pricing strategies based on trip patterns
+Digital payments account for 67% of transactions
 
-Promote digital wallet adoption with rewards/cashback campaigns
+High-demand corridors: Penn Station / Madison Square Garden (pickup) & Upper East Side North (drop-off)
 
-Expand profitable vehicle segments (UberX, Green, Comfort)
+Business Impact
 
-Reduce trip inefficiencies via route optimization & real-time traffic
+Optimized driver allocation improves operational efficiency
 
-🔹 Tools & Technologies
+Targeted surge pricing maximizes revenue
 
-Power BI – dashboard creation & visualization
+Monitoring trip efficiency reduces idle time and enhances customer satisfaction
 
-Excel / CSV – data cleaning & storage
+Focus on high-demand corridors ensures better service availability
 
-DAX – dynamic KPI calculations
+Files in this Repository
 
-Maps & Heatmaps – geospatial insights
+uber_trip_data.csv – Sample cleaned dataset
+
+Uber_Trip_Dashboard.pbix – Power BI dashboard file
+
+Uber_Trip_Dashboard_Snapshot.png – Dashboard visualization snapshot
+
+Uber_Trip_Analysis_Report.pdf – Detailed report with insights
